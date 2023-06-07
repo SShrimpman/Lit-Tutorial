@@ -12,13 +12,19 @@ class SlideButton extends LitElement {
             height: 2em;
             cursor: pointer;
             border-radius: 1em;
-            box-shadow: var(--shadow, gray) 0.2em 0.2em 0.4em,
-                        var(--highlight, white) -0.1em -0.1em 0.2em;
+            box-shadow: var( --carousel-box-shadow,
+                    #293198 0.2em 0.2em 0.4em,
+                    #ceffff -0.1em -0.1em 0.2em
+            );
         }
 
         #btn:active:hover, #btn:hover:active {
-            box-shadow: inset var(--shadow, gray) 0.2em 0.2em 0.4em,
-                        inset var(--highlight, white) -0.1em -0.1em 0.2em;
+            box-shadow: var( --carousel-active-btn-box-shadow,
+                    inset #293198 0.2em 0.2em 0.4em,
+                    inset #ceffff -0.1em -0.1em 0.2em
+            );
+            background-color: var( --carousel-active-btn-background-color );
+            color: var( --carousel-active-btn-color );
         }
 
         ::slotted(svg) {
@@ -29,6 +35,7 @@ class SlideButton extends LitElement {
     override render() {
         return html`
             <div
+                part="internal-btn"
                 id="btn"
                 tabindex="0"
                 role="button"
