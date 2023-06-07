@@ -7,13 +7,51 @@
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
     <script type="module" src="../word-viewer.js"></script>
+    <script type="module" src="../simple-carousel.js"></script>
+    <style>
+      html {
+        background-color: black;
+        color: white;
+      }
+      body {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+  
+        font-family: 'Manrope', sans-serif;
+      }
+  
+      simple-carousel {
+        width: 50vw;
+        max-width: 600px;
+  
+        --shadow: #293198;
+        --highlight: #ceffff;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleleapis.com/">
   </head>
   <body>
-    <word-viewer words="👋.from.html"></word-viewer>
+    <!-- <word-viewer words="👋.from.html"></word-viewer> -->
+    <simple-carousel>
+      <h1>One of These!</h1>
+      <pre><code>
+        <b>&lt;simple-carousel></b>
+        &lt;h1>One of these!&lt;h1>
+        &lt;div>
+        &lt;p>It's just HTML!&lt;/p>
+        &lt;/div>
+        &lt;h1>Like this!&lt;h1>
+        <b>&lt;/simple-carousel></b>
+      </code></pre>
+      <h1>Web Animations API</h1>
+      <h1>By the way, if you've never heard of Lit</h1>
+      <h1>the first episode gives an intro</h1>
+      <h1></h1>
+      <h1>This is scripted?</h1>
+    </simple-carousel>
   </body>
-  <style>
-    body {
-      background-color: black;
-    }
-  </style>
 </html>

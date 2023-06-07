@@ -1,0 +1,1 @@
+{"version":3,"file":"slide-button.d.ts","sourceRoot":"","sources":["src/slide-button.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAa,MAAM,KAAK,CAAC;AAG5C,cACM,WAAY,SAAQ,UAAU;IAChC,OAAgB,MAAM,0BAsBpB;IACO,MAAM;CAWlB;AAED,OAAO,CAAC,MAAM,CAAC;IACX,UAAU,qBAAqB;QAC3B,eAAe,EAAE,WAAW,CAAC;KAChC;CACJ"}
